@@ -1,7 +1,7 @@
 import clarifai from 'clarifai';
 
 const app = new clarifai.App({
-    apiKey: '0da3d99802ab43bab806ee7a57aaf7f6'
+    apiKey: process.env.API_CLARIFAI
 });
 
 const handleApiCall = (req,res)=>{
